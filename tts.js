@@ -5,7 +5,7 @@ dotenv.config(); // ✅ Load env here too
 
 const router = express.Router();
 
-const ELEVEN_API_KEY = "sk_5ebb44045511ff7d9189f24a20b904c90390b426f8016241";
+const ELEVEN_API_KEY = process.env.ELEVENLABS_API_KEY;
 console.log("🔑 ElevenLabs API Key Loaded:", ELEVEN_API_KEY?.slice(0, 5));
 
 const VOICE_ID = '21m00Tcm4TlvDq8ikWAM';
