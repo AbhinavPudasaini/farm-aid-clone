@@ -3,7 +3,7 @@ export default async function handler(req, res) {
     return res.status(405).json({ message: "Method Not Allowed" });
   }
 
-  const ELEVEN_API_KEY = process.env.ELEVENLABS_API_KEY;
+  const ELEVEN_API_KEY = "sk_5ebb44045511ff7d9189f24a20b904c90390b426f8016241";
   const VOICE_ID = "21m00Tcm4TlvDq8ikWAM";
 
   const { text } = req.body;
